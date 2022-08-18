@@ -6,8 +6,8 @@ MotorDriver m;
 Servo servo_brazo;
 uint8_t pin_servo = 9;
 
-const uint8_t s_izq = 6;
-const uint8_t s_der = 5;
+const uint8_t s_izq = 15;
+const uint8_t s_der = 14;
 
 uint8_t s_izq_aux;
 uint8_t s_der_aux;
@@ -17,7 +17,7 @@ uint8_t velocidad_aux = 30;//30;
 uint8_t velocidad_retroceso = 50;//50;
 
 const uint8_t trigger = 13;  
-const uint8_t echo = A5;  
+const uint8_t echo = 19; //A5  
 
 void setup() {
   pinMode(s_izq, INPUT);
